@@ -31,8 +31,8 @@ git commit --amend 		#abre vim para poder editar el comentario de algun commit
 
 
 CONFIGURAR GIT
-git config --global user.name "fsegea"
-git config --global user.email fsegea@yahoo.com
+git config --global user.name "user"
+git config --global user.email correo@mail.com
 git config --global core.editor vim
 
 COMANDOS GIT
