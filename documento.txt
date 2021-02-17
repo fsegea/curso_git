@@ -39,6 +39,7 @@ COMANDOS GIT
 git init	INICIA LA GESTION DEL PROYECTO EN UNA CARPETA
 git clone +protocolo	CLONA UN REPOSITORIO REMOTO EN LOCAL
 
+git push -u origin main	#sube github el proyecto local
 
 
 
