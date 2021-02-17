@@ -1,0 +1,45 @@
+GLOSARIO:
+COMMIT = CAMBIO CONFIRMADO
+RAMA (BRANCH) =	SUCESION DE COMMIT
+MASTER	= RAMA PRINCIPAL DEL PROYECTO
+MERGE = PROCESO DE COMBINAR 2 RAMAS
+
+ESTADOS GIT:
+CONFIRMADO 	O COMMITED 
+MODIFCICADO 	O MODIFIED
+PREPARADO	O STAGED SIGNIFICA QUE HAS MARCADO UN ARCHIVO MODIFICADO PARA QUE SE INCLUYA EN EL PROXIMO COMMIT
+
+PROYECTO GESTIONADO POR GIT
+* DIRECTORIO .git ES UN DIRECTORIO OCULTO QUE PROPORCIONA LA FUNCIONALIDAD A GIT PARA GESTIONAR EL PROYECTO
+* DIRECTORIO DE TRABAJO ES LA CARPETA DEL TRABAJO
+* AREA DE PREPARACION ( STAGING AREA ) ES UN FICHERO QUE INDICA LOS ARCHIVOS QUE IRAN EN EL PROXIMO COMMIT
+
+FLUJO DE TRABAJO ES EL SIGUIENTE:
+
+MODIFICAS UN ARCHIVO
+AÑADES EL ARCHIVO AL STAGING AREA ( AREA DE ENSAYO )
+CONFIRMAS LOS CAMBIOS
+
+
+
+git add nombre_archivo 	# añade un archivo a la zona "pruebas" staged
+git commit -m "mensaje" 	#confirma el cambio y añade un mensaje
+git status -s 			#
+git log --oneline		#muestra el log del proyecto en 1 linea
+git clone protocolo		#clona el repositorio remoto al local
+git commit --amend 		#abre vim para poder editar el comentario de algun commit
+
+
+CONFIGURAR GIT
+git config --global user.name "fsegea"
+git config --global user.email fsegea@yahoo.com
+git config --global core.editor vim
+
+COMANDOS GIT
+git init	INICIA LA GESTION DEL PROYECTO EN UNA CARPETA
+git clone +protocolo	CLONA UN REPOSITORIO REMOTO EN LOCAL
+
+
+
+
+
