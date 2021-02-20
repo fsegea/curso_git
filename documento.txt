@@ -26,8 +26,11 @@ git add nombre_archivo 	# añade un archivo a la zona "pruebas" staged
 git commit -m "mensaje" 	#confirma el cambio y añade un mensaje
 git status -s 			#
 git log --oneline		#muestra el log del proyecto en 1 linea
+git log --graph --oneline	#muestra los commit y las ramas
+git rm --cached nombre_archivo	#borra del repositorio un archivo
+git rm nombre_archivo		#borra del repositorio y del local el archivo
 git clone protocolo		#clona el repositorio remoto al local
-git commit --amend 		#abre vim para poder editar el comentario de algun commit
+git commit --amend 		#abre vim para poder editar el ultimo commit
 
 
 CONFIGURAR GIT
@@ -39,8 +42,23 @@ COMANDOS GIT
 git init	INICIA LA GESTION DEL PROYECTO EN UNA CARPETA
 git clone +protocolo	CLONA UN REPOSITORIO REMOTO EN LOCAL
 
-git push -u origin main	#sube github el proyecto local
+git push 			#sube el repositorio
+git push -u origin main (o master)	#sube github el proyecto local especificando la rama
 
+git tag 			#muestra las tags del repositorio
+git tag v0.0.1			#etiqueta el repositorio a la version v0.0.1
+git show version_tag		#muestra el repositorio en el tag especificado
+git push origin master --tag 	#sube las tags al repositorio
 
+ARCHIVO .gitignore
+En gitignore.io hay plantillas en funcion del entorno de trabajo.
+
+git branch			#muestra las ramas del proyecto
+git branch experimental		#crea la rama experimental
+git show-branch			#muestra las ramas del proyecto
+git checkout experimental	#cambia a la rama experimental
+git checkout -b otrarama	#crea una rama nueva y se mueve a ella
+git merge experimental		#une la rama master con la experimental, pero tienes que estar en la rama master
+git merge experimental -m "esto es un merge con mensaje"
 
 
